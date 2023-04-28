@@ -28,7 +28,7 @@ const testimonials =  [
 
 export  function Testimonials() {
   return (
-    <section className="flex flex-col gap-y-14 lg:gap-y-8 items-center justify-center py-28 ">
+    <section className="flex flex-col gap-y-14 lg:gap-y-16 items-center justify-center py-28 ">
     <h2 className="text-lg tracking-widest font-fraunces text-gray-text">CLIENT TESTIMONIALS</h2>
     <section className="grid grid-cols-1 lg:grid-cols-3 gap-10">
       {
@@ -37,8 +37,8 @@ export  function Testimonials() {
             <img src={testimonial.image} alt="person image" className="object-cover h-16 w-16 rounded-full"/>
             <p className="w-80 text-center font-barlow text-gray-blue">{testimonial.feedback}</p>
             <footer className="flex flex-col items-center gap-y-1">
-              <h4 className="font-fraunces font-extrabold text-dark-blue">{testimonial.name}</h4>
-              <p className="text-xs font-barlow text-gray-text">{testimonial.position}</p>
+              <h3 className="text-lg font-fraunces font-extrabold text-dark-blue">{testimonial.name}</h3>
+              <p className="text-sm font-barlow text-gray-text">{testimonial.position}</p>
             </footer>
         </article>
         ))

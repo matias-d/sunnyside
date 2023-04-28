@@ -3,7 +3,7 @@ import { About, Footer, Header, Hero, Testimonials } from "./components"
 function App() {
 
   return (
-   <main className="">
+   <main>
     <Header />
     <Hero />
     <About />
