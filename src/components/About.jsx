@@ -7,7 +7,7 @@ import imgOrangeMb from '../assets/image-photography-mb.jpg'
 export  function About() {
   return (
     
-    <section className="w-full">
+    <>
       <section className='flex flex-col-reverse lg:flex-row'>
         <article className="flex flex-col items-center justify-center gap-y-8  flex-1 text-center lg:text-start py-16 lg:py-0">
           <div className='flex flex-col gap-y-10 items-center lg:items-start'>
@@ -39,7 +39,7 @@ export  function About() {
         <img  src={imgMoras} alt="background cyan  with a moras" className="object-cover  hidden lg:block"/>
         <img  src={imgMorasMb} alt="background cyan  with a moras" className="object-cover  lg:hidden block"/>
         <div className="absolute w-96 mx-auto bottom-10 lg:bottom-12 text-center left-1/2 -translate-x-1/2 flex flex-col gap-y-6">
-          <h5 className="text-4xl lg:text-3xl font-fraunces font-extrabold text-dark-cyan">Graphic Design</h5>
+          <h4 className="text-4xl lg:text-3xl font-fraunces font-extrabold text-dark-cyan">Graphic Design</h4>
           <p className="font-barlow text-dark-cyan/80 w-80 lg:w-auto mx-auto">Great design you memorable.We deliver artwork that underscores your brand message and captures potential clients´attention.</p>
         </div>
 
@@ -48,11 +48,11 @@ export  function About() {
         <img  src={imgOrange} alt="background blue with a orange" className="object-cover  hidden lg:block"/>
         <img  src={imgOrangeMb} alt="background blue with a orange" className="object-cover lg:hidden block"/>
         <div className="absolute w-80 mx-auto bottom-10 lg:bottom-12 text-center left-1/2 -translate-x-1/2 flex flex-col gap-y-6">
-          <h5 className="text-4xl lg:text-3xl font-fraunces font-extrabold text-moderate-blue">Photography</h5>
+          <h4 className="text-4xl lg:text-3xl font-fraunces font-extrabold text-moderate-blue">Photography</h4>
           <p className="font-barlow text-moderate-blue/80 w-80 lg:w-auto ">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
         </div>
       </article> 
       </section>
-    </section>
+    </>
   )
 }
